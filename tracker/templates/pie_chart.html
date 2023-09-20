@@ -1,0 +1,29 @@
+{% comment %} <h2>Pie Chart</h2>
+<img src="data:image/png;base64,{{ chart }}" alt="Pie Chart"> {% endcomment %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pie Charts</title>
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .chart {
+            flex: 1;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pie Charts</h2>
+    <div class="chart-container">
+        <div class="chart">
+            
+            <img src="data:image/png;base64,{{ chart }}" alt="Category Distribution">
+        </div>
+       
+    </div>
+</body>
+</html>
